@@ -1,0 +1,17 @@
+.dll
+.sys
+.drv
+.mui
+.exe
+.microsoft
+microsoft
+microsoft.com
+.crl
+.crt
+.svg
+.ip6.arpa
+0
+1
+.arpa
+DNS 8.26.56.10
+DNS 8.20.247.10

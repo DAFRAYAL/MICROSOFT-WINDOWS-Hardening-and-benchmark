@@ -1,0 +1,11 @@
+Policy Name	Application Name or URL	Protocol	Source Port	Destination Port	Source IP / Prefix Length	Destination IP / Prefix Length	DSCP Value	Throttle Rate
+Deny overlay one	*	TCP and UDP	*	*	223.255.255.255/32	*	7	1
+Deny overlay two	*	TCP and UDP	*	*	*	223.255.255.255/32	7	1
+Gaming TCP one	*	TCP	*	*	*	127.0.0.1/32	1	11111111
+Gaming TCP two	*	TCP	*	*	*	0.0.0.0/32	1	111111
+Localhost one	*	UDP	*	*	0.0.0.0/32	*	7	11111
+Localhost two	*	TCP	*	*	0.0.0.0/32	*	1	1111111
+Loopback	*	TCP and UDP	*	*	127.0.0.1/32	*	1	11111111
+QoS gaming one	*	UDP	*	*	*	127.0.0.1/32	7	111
+QoS gaming two	*	UDP	*	*	*	0.0.0.0/32	7	11
+10 Seconds cool down timer. Only network control, controlled load service types are 7
