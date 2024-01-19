@@ -1,0 +1,152 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This file contains network name/network number mappings for 
+# local networks. Network numbers are recognized in dotted decimal form.
+#
+# Format:
+#
+# <network name>  <network number>     [aliases...]  [#<comment>]
+#
+# For example:
+#
+#    loopback     127
+#    campus       284.122.107
+#    london       284.122.108
+loopback                 127
+loopback                 169.254.252.68
+loopback                 169
+#Domain-Name-Services
+127.0.1.1 127.0.0.1
+127.0.0.1 127.0.0.1
+0.0.0.0 127.0.0.1
+::1 127.0.0.1
+exzodfya 127.0.0.1
+exzodfya.local 127.0.0.1
+8.26.56.10 comodo.privatedns1.dafrayal.com
+8.20.247.10 comodo.privatedns2.dafrayal.com
+216.146.35.35 dyn.privatedns1.dafrayal.com
+216.146.36.36 dyn.privatedns2.dafrayal.com
+#
+#Dills
+#facebook.com 223.255.255.255
+#223.255.255.255 facebook.com
+#google.com 223.255.255.255
+#223.255.255.255 google.com
+#facebook.net 223.255.255.255
+#223.255.255.255 facebook.net
+#meta.com 223.255.255.255
+#223.255.255.255 meta.com
+#
+#WhileDafrayal.ComDomainInternetProtocolAddressStandsAsRelay
+#InternetIdentificationOnAdapterWillSucceed
+#CanBeไทย
+127.0.0.1 dafrayal.com
+#dafrayal.com 127.0.0.1
+20.79.33.248 dafrayal.com
+#
+internet.dafrayal.com 169.254.252.68
+169.254.252.68 internet.dafrayal.com
+#
+127.0.0.1 192.168.137.1
+#
+localhost 127.0.0.1
+127.0.0.1 localhost
+lan 127.0.0.1
+127.0.0.1 lan
+host 127.0.0.1
+127.0.0.1 host
+local 127.0.0.1
+127.0.0.1 local
+local.localhost 127.0.0.1
+127.0.0.1 local.localhost
+#InLocalCaseReplaceWithไทย
+#dafrayal.com local.localhost
+local.localhost dafrayal.com
+#
+network.dafrayal.com 127.0.0.1
+#
+loop 127.0.0.1
+127.0.0.1 loop
+loopback 127.0.0.1
+127.0.0.1 loopback
+#
+hoist.dafrayal.com 0.0.0.0
+loophole.dafrayal.com 127.0.0.1
+#
+#dafrayal.com 127.0.0.1
+dafrayal.com 169.254.252.68
+20.117.36.55 network.dafrayal.com
+20.117.36.55 web.dafrayal.com
+#
+::1 127.0.0.1
+#CanBeUsedAsIntranetProxyFromNetworkBridgeAsไทย
+#OrAs
+169.254.252.68 192.168.137.1
+192.168.137.1 127.0.0.1
+#
+0 223.255.255.255
+a 223.255.255.255
+b 223.255.255.255
+c 223.255.255.255
+d 223.255.255.255
+#HAUNIVProtocolsThrough
+195.201.245.217 192.168.137.1
+hauniv.edu 192.168.137.1
+#AddedByDockerDesktop
+#ToAllowTheSameKubeContextToWorkOnTheHostAndTheContainer
+127.0.0.1 kubernetes.docker.internal
+#EndOfSection
+127.0.0.1 cryptomator-vault
+#DomainsCheckWhatYouAreOnFromBeforeEnteringWithout(#)#Replace#
+#Dafrayal.com#Or#Web.Dafrayal.Com
+#With#(blue#or#ไทย)
+#IfYouLikeButAllAreDisabled
+invalid 223.255.255.255
+223.255.255.255 invalid
+intranet 223.255.255.255
+223.255.255.255 intranet
+internal 223.255.255.255
+223.255.255.255 internal
+private 223.255.255.255
+223.255.255.255 private
+localdomain 223.255.255.255
+223.255.255.255 localdomain
+domain 223.255.255.255
+223.255.255.255 domain
+#
+lan exzodfya.local
+exzodfya.local lan
+host exzodfya.local
+exzodfya.local host
+#
+home 223.255.255.255
+223.255.255.255 home
+corp 223.255.255.255
+223.255.255.255 corp
+home.arpa 223.255.255.255
+223.255.255.255 home.arpa
+test 223.255.255.255
+223.255.255.255 test
+223.255.255.255 wpad
+wpad 223.255.255.255
+223.255.255.255 onion
+onion 223.255.255.255
+_hotspot_.m2m 223.255.255.255
+223.255.255.255 _hotspot_.m2m
+hotspot.m2m 223.255.255.255
+223.255.255.255 hotspot.m2m
+#
+orbilogin.com 223.255.255.255
+223.255.255.255 orbilogin.com
+orbilogin.net 223.255.255.255
+223.255.255.255 orbilogin.net
+routerlogin.net 223.255.255.255
+223.255.255.255 routerlogin.net
+routerlogin.com 223.255.255.255
+223.255.255.255 routerlogin.com
+router.asus.com 223.255.255.255
+223.255.255.255 router.asus.com
+cp.cloudflare.com 223.255.255.255
+223.255.255.255 cp.cloudflare.com
+nonexistent.cloudflare.com 223.255.255.255
+223.255.255.255 nonexistent.cloudflare.com
