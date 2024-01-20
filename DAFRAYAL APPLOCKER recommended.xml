@@ -1,0 +1,1251 @@
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="Enabled">
+    <FilePublisherRule Id="71c7adcc-d8c2-4c4e-8aba-701bd4bb6011" Name="Signed by Microsoft Corporation" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e11ec7a6-561a-449d-a0b8-e672545ad81f" Name="All packaged apps" Description="Allows members of the Everyone group to run packaged apps that are" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+  <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Exe" EnforcementMode="Enabled">
+    <FilePublisherRule Id="167d8055-00db-4258-bc46-eb802071a2cd" Name="Signed by O=INTEL CORPORATION, L=SANTA CLARA, S=CA, C=US" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=INTEL CORPORATION, L=SANTA CLARA, S=CA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="2297dd24-2192-4680-bfad-0e2920bbf434" Name="Signed by O=RIOT GAMES, INC., L=LOS ANGELES, S=CALIFORNIA, C=US" Description="Trojan virus. Internet rootkit. Try delete, but don't kill motherboard. Use power users to allow." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=RIOT GAMES, INC., L=LOS ANGELES, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="b3ab8721-f2a8-4cd7-9a24-dddc963192bf" Name="Signed by O=BITSUM TECHNOLOGIES (BITSUM LLC), L=MORRISTOWN, S=TENNESSEE, C=US" Description="Virus" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=BITSUM TECHNOLOGIES (BITSUM LLC), L=MORRISTOWN, S=TENNESSEE, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="bbd21294-dde6-43a2-8986-f614d2808009" Name="MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="Deny is recommended. First party malware, but your system won't work if you deny, because out of box - all are only for power users and administrators. Safe as it gets while running." UserOrGroupSid="S-1-2-1" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="be361dd5-a96a-427a-ae9c-2bed91c10bb8" Name="INTEL MICROSOFT" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*INTEL*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="034f6464-7e60-46c5-bdff-30c48ea906c1" Name="%OSDRIVE%\System Volume Information\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\System Volume Information\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="0861f881-f65c-4a17-8509-67afb9b159be" Name="*.zip" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.zip" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="0a3245c4-feb2-4d73-9d8f-268f4a6ee6a8" Name="*.ogg" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.ogg" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="0e3d0470-08d9-4948-9f0d-bce47ba63394" Name="*.dll" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.dll" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="111b0584-2f5e-4cc6-9220-b182dc35ed6c" Name="%SYSTEM32%\config\SAM*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SAM*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="11693d16-0901-4eb7-a42b-61cd409a53a3" Name="*.pnf" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.pnf" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="131b3922-3ca5-4e87-b668-e69b9061a698" Name="%OSDRIVE%\Users\Public\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Public\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="13317464-e6d3-475b-a128-54cb50b66154" Name="%SYSTEM32%\config\DEFAULT*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\DEFAULT*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1a53fe6a-de7e-469b-a83f-97b210f46d1a" Name="%OSDRIVE%\Users\*\AppData\Roaming\Mozilla\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Roaming\Mozilla\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1b4962fd-1cea-44c8-8eae-c567e605266b" Name="*.NLS" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.NLS" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1e03514d-c1ea-4cd7-9e1f-e78cc51659e2" Name="%OSDRIVE%\Users\*\AppData\Local\Temp\*" Description="This needs user account control disabled and start all as administrators just like you see on WINDOWS SERVER operating systems." UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1eea7ad1-1fa7-4624-8453-01d0cdc8f1e8" Name="*.mp3" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.mp3" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1f47b2ec-57ae-4de8-b728-9b3aa1ee399e" Name="*$*" Description="These are DPC (executables coming from service host process) like $logfile, $MFT, $index" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*$*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2516f646-a6a9-4d35-8cc7-0ce1bebcf66e" Name="%OSDRIVE%\Users\*\Cookies\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Cookies\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="28aa5382-c540-4000-a6f9-7218d3b41f29" Name="%SYSTEM32%\config\DRIVERS*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\DRIVERS*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2fbc4bbb-716d-4f3b-be6a-e29ebbcd2e94" Name="*.reg" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.reg" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3266c254-0a3f-437f-9976-b7841c671faa" Name="*.sys" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.sys" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="330157d2-445d-4e06-933c-7ec3995dd1fc" Name="*.mui" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.mui" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="33fa50e7-fad9-4c10-aeca-2c19c7b12f5c" Name="*.png" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.png" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="360e7b7b-8bac-4db5-9c16-35acceccb4b8" Name="%SYSTEM32%\config\SOFTWARE*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SOFTWARE*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3685a6a1-3509-435d-9648-e0d0791f76fe" Name="*.inf" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.inf" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="387697f5-6b3d-45c7-95dc-11607b3c08ab" Name="*.js" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.js" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3a2aa6e8-f28b-4346-9250-7d18be8de124" Name="%PROGRAMFILES%\Spybot - Search &amp; Destroy 2\SDSpybotLab.exe" Description="Weird virus" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Spybot - Search &amp; Destroy 2\SDSpybotLab.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3b46c292-1a71-4227-a12e-86d8f0239683" Name="%OSDRIVE%\programdata\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\programdata\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3b7e327d-de03-4ac0-916e-3714384813d1" Name="%OSDRIVE%\Users\*\Start Menu\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Start Menu\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="40d62180-abd2-41ab-9eeb-f83d87001bf9" Name="X:\*" Description="You can add multiple alternative letters to your %OSDRIVE%, but it is not recommended since some installations jump between drives for example - visual redistributables." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="X:\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="41759139-3fd9-4434-9527-688eb7f780e0" Name="*.msc" Description="Fake executable" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.msc" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="44ae89aa-ac25-4170-b6b9-631d398fad7f" Name="%PROGRAMFILES%\Steam\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Steam\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="44eb74ef-42c8-42ae-aec2-ebf201867243" Name="*.drv" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.drv" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="48ee46e8-2bdf-4540-9167-c47f57ccb829" Name="%OSDRIVE%\ProgramData\Microsoft\WwanSvc\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\WwanSvc\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4b065bac-45e7-4a34-b01b-cb5f6f4de6a4" Name="%OSDRIVE%\Users\*\Downloads\*" Description="This is against plain simplicity of a command copy and defaults." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Downloads\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4ee49dc5-c8ca-472b-b9b1-4214001e566a" Name="*.pif" Description="Fake executable" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.pif" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="505a6922-089e-48c6-aad1-5eb4e2058a29" Name="%PROGRAMFILES%\LibreOffice\*" Description="" UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\LibreOffice\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5122d1b3-2113-45e1-974d-edd06a17f507" Name="*.htm" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.htm" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="53d6b924-bac1-4f13-8019-e9376f75b4b5" Name="*.jse" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.jse" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="54d93919-d1dd-4b0d-b870-a8b733402b41" Name="*.flac" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.flac" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="54df1436-3114-4c0f-8bf2-d7e952a8100c" Name="%SYSTEM32%\config\SYSTEM*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SYSTEM*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="564b1639-94a2-4f31-a979-c99ab8f7772f" Name="*.gif" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.gif" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="56e789b9-6a14-48a8-86af-d5da6e5cbaf7" Name="%OSDRIVE%\Users\*" Description="Can be denied to services or system permissions excluding system, local service itself" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1004" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5c9bcada-d60c-4ace-9519-8c160ec85fa0" Name="All" Description="Outside the box. Visual redistributables and others may need this as administrators" UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5d7c96ea-1e39-4c8f-9ee9-5e93a98c11b6" Name="%OSDRIVE%\ProgramData\Desktop\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Desktop\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="609e9f40-e6e4-4a16-a351-0766d35a1e8f" Name="%OSDRIVE%\Users\*\SendTo\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\SendTo\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="611214fa-e7ca-4b58-9336-6216afc695d4" Name="*.vbe" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.vbe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="613a5f81-dbe0-42f8-b01e-c6316ec492fc" Name="Ally" Description="Outside the box. Visual redistributables and others may need this as administrators" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="62f7cfca-f7bd-4a9a-b3e2-12be82b8afce" Name="*.bat" Description="Fake executable" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.bat" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6570b672-8ca5-42af-b052-4dfa983467c8" Name="%SYSTEM32%\config\BBI*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\BBI*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="672ca130-cd9a-476e-9bea-eacc11b8c6d5" Name="%OSDRIVE%\Users\*\AppData\Local\Temporary Internet Files\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Temporary Internet Files\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6cb90df6-ef26-42c1-8366-44c65de802b7" Name="%OSDRIVE%\Users\*\AppData\Local\Microsoft\Edge\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Microsoft\Edge\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6f822872-9b68-4b9e-8f72-538aa2b10b20" Name="%PROGRAMFILES%\Microsoft\*" Description="" UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6fb768d9-13f5-43c2-b69a-8e4a11537a6c" Name="%SYSTEM32%\ntoskrnl.exe" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\ntoskrnl.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="71cce08f-c2de-4df7-840c-645ac22253be" Name="%OSDRIVE%\Users\Default\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Default\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="735c045d-46ed-4ee5-b3c0-4ed9710718b8" Name="*.htmlx" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.htmlx" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="74491526-dac1-4ae3-ba4b-e59771bfd1ba" Name="%OSDRIVE%\ProgramData\Templates\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Templates\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="759e7609-5115-4e20-a5d9-a863465bf619" Name="%OSDRIVE%\Boot\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Boot\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="78a70bb2-7e61-4c64-b2d1-9ee17176e34f" Name="%SYSTEM32%\drivers\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\drivers\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7c6b3983-96c6-4196-a105-05db66eff7ec" Name="*.vbs" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.vbs" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7f8d6913-7127-43d2-a264-c51d548d7ba9" Name="%OSDRIVE%\Users\*\Application Data\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="822d207f-d6a6-4b5b-909e-a4836119f081" Name="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="822e95db-9b1a-4fcd-bd6a-421118c7370b" Name="%PROGRAMFILES%\*" Description="Can be denied to services or system permissions excluding system, local service itself" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1007" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8486a05e-50fa-40ca-882b-b1c720def53f" Name="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="90659127-8942-435a-87be-26cda86294c1" Name="*.jpeg" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.jpeg" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9451b294-e2a1-4df6-bdb0-5817b6e25333" Name="%OSDRIVE%\ProgramData\Start Menu\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Start Menu\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9467947c-2ea0-40b7-8d22-33ef3a83ff5d" Name="%WINDIR%\SoftwareDistribution\*" Description="This needs user account control disabled and start all as administrators just like you see on WINDOWS SERVER operating systems." UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\SoftwareDistribution\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="95209091-bb74-4c70-be2b-4e8827cf3fae" Name="%OSDRIVE%\Users\*\NetHood\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\NetHood\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="99010ca0-c679-4496-b813-7fcba2fe4639" Name="%OSDRIVE%\ProgramData\Microsoft\Wlansvc\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\Wlansvc\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9acfa3d2-75ca-4acf-a716-5cbbfeceed5b" Name="%PROGRAMFILES%\Microsoft\Temp\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9c8b9ff3-bd89-4111-b905-0f7d3c43b65f" Name="*.com" Description="Fake executable" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.com" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a0d82bae-6f76-4c9b-9463-3a57100e4e5e" Name="%OSDRIVE%" Description="Attack block for blind. Plain simple. These things work the best." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a1327289-8643-4e65-8817-6a8fb176038b" Name="%OSDRIVE%\$Recycle.Bin\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\$Recycle.Bin\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a187a39c-abde-43f1-84e1-a650782e92d3" Name="%PROGRAMFILES%\*" Description="Can be denied to services or system permissions excluding system, local service itself" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1004" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a391efee-018a-4028-b181-9bfb416b2a6e" Name="*.cab" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.cab" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a6940da7-8e55-47a8-a684-725400b5da41" Name="%OSDRIVE%\Users\*\AppData\Local\Application Data\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a82701af-0c14-4b92-9f30-f64c2337ac4d" Name="%OSDRIVE%\Users\*" Description="Can be denied to services or system permissions excluding system, local service itself" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1007" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a9c13b2b-f47b-4ae1-ab20-70e4c2929b9d" Name="%SYSTEM32%\config\ELAM*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\ELAM*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="aaf064bc-1493-415b-8c94-de6d2e1f8020" Name="%PROGRAMFILES%\Mozilla Firefox\*" Description="" UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Mozilla Firefox\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ab8ee30b-0ddc-4711-b24f-3732fce725a6" Name="%OSDRIVE%\Users\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ac443d6e-fb89-402d-b6fc-a134863830a8" Name="%SYSTEM32%\config\SECURITY*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SECURITY*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ac9db3a8-7f1b-4042-a57e-f63a1fae024a" Name="*.dat" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.dat" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="acd4244e-7103-42e4-b38b-4c0522d45901" Name="%SYSTEM32%\config\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ad5e4e3c-7634-4940-995d-0f194445734e" Name="%OSDRIVE%\VTRoot\*" Description="Can be denied to services or system permissions excluding system, local service itself" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1007" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\VTRoot\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b03e50c5-5e6a-4efa-ac3d-d3e20358d1f2" Name="*.cmd" Description="Fake executable" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.cmd" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b38f8843-f08f-42da-8816-adacbc806b40" Name="%OSDRIVE%\ProgramData\Microsoft\Windows\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\Windows\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b3c8cbaf-231c-4ce3-80e0-abddab9a78ee" Name="*.ico" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.ico" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b97e3681-6ed4-40b9-942e-7a4423e50f44" Name="%SYSTEM32%\config\COMPONENTS*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\COMPONENTS*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="bb947f7d-c6bd-4626-9e23-15d2113cf664" Name="%SYSTEM32%\dwm.exe" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\dwm.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="bb97399c-0b28-4008-bb42-f068b42b6a1f" Name="*.wav" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.wav" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="bc1726f5-6d7d-44fb-bae8-bb990e1cd36d" Name="%OSDRIVE%\Users\*\Local Settings\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Local Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c3048473-d1d6-441f-96b9-c4bf4876ad70" Name="%OSDRIVE%\Users\*\PrintHood\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\PrintHood\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c68f794d-c9f0-4b56-b116-72a0c13407fd" Name="%WINDIR%\explorer.exe" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\explorer.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ca6661d6-acba-4077-84f4-e37b44dc3e21" Name="*.php" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.php" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="cdafc3fa-f66e-42ba-a8b2-53cedf0efee6" Name="%OSDRIVE%\Users\Default User\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Default User\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d2619693-1231-42b5-8f10-748d458ca310" Name="*.bin" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.bin" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d3886a60-3706-4adc-a739-5d58c91601fc" Name="*.html" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.html" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d6ce0e4c-6830-4dbd-a3ef-5fe5ecb88461" Name="%OSDRIVE%\Documents and Settings\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Documents and Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d95e01ee-29ca-4bd5-b493-da11e1ca9e88" Name="%OSDRIVE%\ProgramData\Documents\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Documents\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="dd7ab442-d485-4a52-adb0-a791c0158b5b" Name="*.*" Description="Can be denied" UserOrGroupSid="S-1-5-32-546" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e797c285-0bc6-4a24-b6d1-77322d3a2a5a" Name="*.jpg" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.jpg" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ebf249ea-a421-416b-82dc-b8b0967ada09" Name="%OSDRIVE%\ProgramData\Application Data\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f5b9f3ca-526b-4650-adb1-8b6f7d4cb09b" Name="%PROGRAMFILES%\Internet Explorer\*" Description="" UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Internet Explorer\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f6027898-35c6-4f70-9d7f-e78d0efeb72b" Name="%SYSTEM32%\csrss.exe" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\csrss.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f6ef39b8-02a0-48fa-bba9-ea7843c1ac81" Name="%OSDRIVE%\VTRoot\*" Description="Can be denied to services or system permissions excluding system, local service itself" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1004" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\VTRoot\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f765a74e-4a56-4721-84a7-a14a79a97dec" Name="%WINDIR%\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fcbc3e87-bbc6-466c-8373-62e73521683a" Name="%OSDRIVE%\Users\*\Templates\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Templates\*" />
+      </Conditions>
+    </FilePathRule>
+    <FileHashRule Id="0571b61b-2d7a-4f66-a1de-25cc77cc2a97" Name="notepad.exe" Description="" UserOrGroupSid="S-1-5-32-547" Action="Deny">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x0C386FA6ABFDEFFBBEFF5BCE97D461340A23D1981458607BD9E5EEFF4066789A" SourceFileName="notepad.exe" SourceFileLength="201216" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="28517068-2180-4f36-ab02-501bb52c0d97" Name="notepad.exe" Description="" UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x0C386FA6ABFDEFFBBEFF5BCE97D461340A23D1981458607BD9E5EEFF4066789A" SourceFileName="notepad.exe" SourceFileLength="201216" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePathRule Id="71cef75c-78e6-44fb-b94b-5d647f2ee3e3" Name="%PROGRAMFILES%\*" Description="You do not have to install anything. Block this folder immediately." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%PROGRAMFILES%\7-Zip\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\AMD\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Android\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Angry IP Scanner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Application Verifier\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ArdfryImaging\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Audacity\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Bitcoin\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Bitdefender\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Blender Foundation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Bulk Rename Utility\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CCleaner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Cheat Engine 7.5\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CheckMAL\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CleverFiles\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Codec\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Common Files\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CONEXANT\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Crucial\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CyberLink\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DAZ 3D\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DesignSpark\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DIFX\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DiskFresh\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DiskGenius\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Dokan\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\dotnet\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\EA Games\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Easy Context Menu\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Easy Video Maker\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\EMCO\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Emsisoft Anti-Malware\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ENE\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\eparakstitajs3\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ERAM\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\FlashBoot\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\FlashIntegro\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\FolderPainter\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Fortres Grand\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GCompris-Qt\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GIMP 2\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GLInterceptx64_1_3_4\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GNU Octave\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Go\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Google\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GridinSoft Anti-Ransomware\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HandBrake\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Hasleo\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HexChat\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HitmanPro\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HWiNFO64\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HxD\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IDEMIA\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IIS Express\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IIS\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Image-Line\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ImDisk\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ImgDrive\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Inkscape\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Intel\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\itcher\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\JAM Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\kdenlive\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LatencyMon\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LibreOffice\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LLVM\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LMMS\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Locktime Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LSoft Technologies\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ManageEngine\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MediaHuman\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mega-Nerd\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Memsource Editor\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mercury\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Deployment Toolkit\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Intune Management Extension\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Office 15\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Office\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft SQL Server\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Update Health Tools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Visual Studio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft VS Code\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Minidriver\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mixxx\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ModifiableWindowsApps\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mozilla Firefox\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MPC-HC\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MSBuild\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MultiMon\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MuseScore 3\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\no accounting\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Notepad++\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NoVirusThanks\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Npcap\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NVIDIA Corporation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NVIDIA GPU Computing Toolkit\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\obs-studio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\OpenMPT\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\OpenSCAD\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Opera\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Oracle\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Orange\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Paragon Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Pd\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\PowerISO\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\PowerShell\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\PowerToys\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Prio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Process Lasso\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\qemu\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\qTox\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\R\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Reference Assemblies\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Rizonesoft\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Samsung\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SanityCheck\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Shark007\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SketchUp\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\smartmontools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Snort\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SoftEther VPN Client\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SSD Tweaker\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SSDFresh\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Steam\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\TAP-Windows\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Thincast\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\tixati\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Transcend\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\TuxPaint\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Tweak-SSD v2\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Uninstall Information\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\UrbanVPN\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\USB Boot Drive Creator\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\USBPcap\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VeraCrypt\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VideoLAN\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Vidiot\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VirtualDub\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Web Solution Mart\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WhoCrashed\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WhySoSlow\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender Advanced Threat Protection\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Identity Foundation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Mail\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Media Player\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Multimedia Platform\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows NT\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Photo Viewer\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Portable Devices\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Security\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Sidebar\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WindowsApps\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WindowsPowerShell\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WinHTTrack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WinImage\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Wireshark\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\X Codec Pack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\xampp\*" />
+      </Exceptions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Msi" EnforcementMode="Enabled">
+    <FilePathRule Id="0536785f-eb8d-44a5-b11c-ebce4dd9399a" Name="%OSDRIVE%\Users\*\AppData\Local\Microsoft\Edge\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Microsoft\Edge\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="0b99e52f-a374-418c-8f69-1ada81a1bd3f" Name="X:\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="X:\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2a8a6f5c-8368-4732-bc42-46ca8712811d" Name="%OSDRIVE%\Users\*\AppData\Roaming\Mozilla\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Roaming\Mozilla\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2d87fe6f-1d60-4340-bb00-cf72d8a3d005" Name="%OSDRIVE%" Description="Attack block for blind. Plain simple. These things work the best." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2d950195-0ed6-4c65-acd5-80b41a245222" Name="%OSDRIVE%\Users\*\AppData\Local\Temporary Internet Files\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Temporary Internet Files\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="320653b4-17b7-413e-9b7e-13f2cb6d4165" Name="%OSDRIVE%\Users\Default\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Default\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="36c5a682-e539-4009-a7df-4fd855de2fd3" Name="%OSDRIVE%\Users\*\PrintHood\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\PrintHood\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3c561502-b386-4029-a6aa-4ee17e05a202" Name="%OSDRIVE%\Users\*\AppData\Local\Temp\*" Description="This needs user account control disabled and start all as administrators just like you see on WINDOWS SERVER operating systems." UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3cc06956-fbca-401b-ad14-82766ae7c285" Name="%OSDRIVE%\ProgramData\Desktop\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Desktop\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="405e0e3f-afb9-4b6c-89ac-35bdd25b9aba" Name="*$*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*$*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="536a1fab-9bba-429d-b460-87f8d484a15a" Name="*.mui" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.mui" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5ecd7886-b080-4270-88c6-50d6c250fa20" Name="%OSDRIVE%\Users\*\SendTo\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\SendTo\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6bafa19c-3079-447e-b9ba-f421cc85bb0a" Name="%OSDRIVE%\Boot\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Boot\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7fe3ac87-38ab-49a9-be29-5d0fb7df5d47" Name="%OSDRIVE%\Users\*\Application Data\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8096ceb2-0e9c-4a50-91c2-de11f8c32dbd" Name="%OSDRIVE%\Users\*\Downloads\*" Description="This is against plain simplicity of a command copy and defaults." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Downloads\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8760e3ae-b44a-424d-90af-8f113691e5b9" Name="%OSDRIVE%\ProgramData\Start Menu\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Start Menu\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9bca5bcf-6806-4938-957a-e45230801c7f" Name="%OSDRIVE%\ProgramData\Microsoft\WwanSvc\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\WwanSvc\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9c91d4db-9376-46e0-8c35-cc7f98b08fc9" Name="%PROGRAMFILES%\Microsoft\Temp\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9e083785-7936-4e66-9d1f-b13c11834880" Name="%OSDRIVE%\ProgramData\Microsoft\Wlansvc\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\Wlansvc\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a2b65f1a-cfab-41bc-8f3b-3247ec96e785" Name="*.drv" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.drv" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a54cf0fd-120e-47e0-9169-3e857dcc0c8e" Name="%OSDRIVE%\ProgramData\Templates\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Templates\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a9ff8faa-661b-4288-944e-b94346ab7598" Name="*.exe" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ac43e78e-729b-448a-a1f6-8d0a49d8d9a6" Name="%OSDRIVE%\$Recycle.Bin\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\$Recycle.Bin\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b50a8744-4c14-413e-926e-dc82c244ba17" Name="%OSDRIVE%\Documents and Settings\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Documents and Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b68ed5bb-4854-4bfb-b921-31527317af72" Name="All Windows Installer files" Description="Outside the box" UserOrGroupSid="S-1-2-1" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="baffdbd8-f6e5-4c9a-97a1-b8cbb13c02f0" Name="*.sys" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.sys" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c09593c6-b32d-4739-9db6-f601904a8539" Name="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c4b79f4e-d91e-47a9-8651-afff4f60a33d" Name="%WINDIR%\SoftwareDistribution\*" Description="This needs user account control disabled and start all as administrators just like you see on WINDOWS SERVER operating systems." UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\SoftwareDistribution\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c7bb70e1-cb1d-4884-bb5e-3cfb0c5acab4" Name="%OSDRIVE%\Users\*\NetHood\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\NetHood\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c7e1640d-78d9-41aa-b3a4-9427ca2901fa" Name="%OSDRIVE%\Users\*\Templates\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Templates\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d6bb856e-2caa-4c70-a492-6e4a1d3c524f" Name="%OSDRIVE%\Users\Public\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Public\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="dcf58580-7b55-48de-864b-6d0ce6538e9c" Name="%OSDRIVE%\Users\*\Cookies\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Cookies\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e64efe8f-671e-4345-92d3-5db40a226831" Name="%OSDRIVE%\ProgramData\Documents\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Documents\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e6c771ca-7716-4635-9f0a-d7e339703fae" Name="%OSDRIVE%\Users\*\Start Menu\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Start Menu\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f095cdb2-db57-4e14-a9bc-d7e6ce0efd89" Name="%OSDRIVE%\Users\*\AppData\Local\Application Data\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f64f2a11-d2a2-41a7-8565-b26aa7b435e0" Name="%OSDRIVE%\Users\*\Local Settings\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Local Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f6d0820f-a49f-4c40-b2c7-caa7b4d395c3" Name="All Windows Installer files in %systemdrive%\Windows\Installer" Description="Allows members of the Everyone group to run all Windows Installer files located in %systemdrive%\Windows\Installer." UserOrGroupSid="S-1-2-1" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Installer\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f730d355-0206-42ef-8218-ff1603db282e" Name="%OSDRIVE%\System Volume Information\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\System Volume Information\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fa083003-ac0e-4a00-bb3e-e6050182ba8a" Name="%OSDRIVE%\Users\Default User\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Default User\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fdcf70f6-079d-43e7-88e5-05850c3e8e2d" Name="%OSDRIVE%\ProgramData\Application Data\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ff26db89-9bbb-487e-9106-f33c4c2f2144" Name="*.dll" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.dll" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Script" EnforcementMode="Enabled">
+    <FilePathRule Id="0590038a-6745-4e45-aa4b-554a55f6ac7d" Name="%PROGRAMFILES%\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="0b50ad16-1dcd-4270-913e-e488a3bf0342" Name="%OSDRIVE%\Users\*\SendTo\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\SendTo\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1355417a-e0c7-4658-989e-4788a567fc43" Name="%OSDRIVE%\*" Description="" UserOrGroupSid="S-1-2-1" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="150f5593-e43f-401a-9ca8-032003229cbd" Name="*$*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*$*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="176e92ad-eb83-44b0-9d3c-b7ef116cb0c9" Name="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="18cfe26d-7bab-4e4e-b8bd-81d02d868d93" Name="%PROGRAMFILES%\*" Description="" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1004" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1f9d8f47-904c-4eb0-bc6f-59453509b8ce" Name="%OSDRIVE%\Users\*\AppData\Roaming\Mozilla\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Roaming\Mozilla\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2058642e-3e07-42a8-9ec4-7e357b57bf2f" Name="%OSDRIVE%\Users\*\Templates\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Templates\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="20734233-3c44-45dc-82cf-009ce6d7728f" Name="%OSDRIVE%\ProgramData\Microsoft\Windows\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\Windows\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="20917e86-b27d-45ae-8aa0-1582c7a7cb3a" Name="%OSDRIVE%\Users\*\NetHood\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\NetHood\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="250270da-def0-455e-a1a0-d03da5fd2231" Name="%OSDRIVE%\ProgramData\Application Data\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="27d6ba82-c3f9-4af2-bd4f-38b97716e00d" Name="%OSDRIVE%\Users\*\AppData\Local\Temp\*" Description="This needs user account control disabled and start all as administrators just like you see on WINDOWS SERVER operating systems." UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="32d3e46e-2944-459a-9283-530017db7d55" Name="%OSDRIVE%\$Recycle.Bin\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\$Recycle.Bin\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="35d32b9d-8f9e-46d1-835d-6a8ecd9d6df7" Name="%WINDIR%\SoftwareDistribution\*" Description="This needs user account control disabled and start all as administrators just like you see on WINDOWS SERVER operating systems." UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\SoftwareDistribution\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3e0d73f2-4198-4dbc-878c-519ede69c620" Name="%OSDRIVE%\Users\*" Description="" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1004" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4212f45b-2813-4daf-9d28-be74a164648b" Name="%OSDRIVE%\Users\*\AppData\Local\Temporary Internet Files\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Temporary Internet Files\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4ac6e91e-44b0-43f4-a683-38415bf32366" Name="%SYSTEM32%\config\BBI*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\BBI*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4e1e62a2-5eb3-4145-a708-dbf1612c19ac" Name="*.exe" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4f9ef8dd-9dd9-4d6b-861c-7bdbba6175a5" Name="%OSDRIVE%\Users\*\AppData\Local\Application Data\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5d2290f7-c497-4706-af48-bfb3b7d587bf" Name="%OSDRIVE%\Documents and Settings\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Documents and Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5d7f74e5-b082-41cb-af2d-c2a84b2c3fae" Name="*.dat" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.dat" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5ef0d1eb-c19b-473a-9464-c77db6639662" Name="%OSDRIVE%\ProgramData\Microsoft\Wlansvc\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\Wlansvc\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5fb3b80a-42c3-46d3-8652-f195a2480676" Name="X:\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="X:\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="692ad4d2-4e96-46ae-9a02-dc47b968a54c" Name="%OSDRIVE%\ProgramData\Documents\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Documents\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="695e9500-99be-4aa4-810e-f598a6bc2fa5" Name="%SYSTEM32%\config\COMPONENTS*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\COMPONENTS*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6bf83ea7-c87c-4058-89ea-272cdd037dca" Name="%OSDRIVE%\Users\Default\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Default\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="73c482a3-584a-4a09-b9af-2f61e41718a8" Name="%SYSTEM32%\config\SOFTWARE*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SOFTWARE*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7452ae06-56dc-41d4-8587-fa693beff1ae" Name="%OSDRIVE%\Users\*\AppData\Local\Microsoft\Edge\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Microsoft\Edge\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7909fedb-f1b7-4a52-b668-161e9cf3611b" Name="%OSDRIVE%\Users\*\Local Settings\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Local Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8dc526a1-8655-4137-86ed-2e19480afaf4" Name="*.sys" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.sys" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="95421441-3f9e-48e5-8ce0-315786678a6e" Name="%OSDRIVE%\Users\*\Application Data\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Application Data\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9fbd47c7-3be5-43b9-ba0c-da151052c793" Name="%OSDRIVE%\ProgramData\Desktop\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Desktop\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a4aaaec7-3ba0-41ce-b005-ddfa38ce3100" Name="%OSDRIVE%" Description="Attack block for blind. Plain simple. These things work the best." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ab0667d1-9e3c-4cde-99fd-c9a5fa884344" Name="%SYSTEM32%\config\SAM*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SAM*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b08a28cb-1785-4c53-a3d4-922b1d045b4b" Name="%OSDRIVE%\Boot\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Boot\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b15bf658-722c-4e94-8f2c-75e95c8632fd" Name="%SYSTEM32%\config\SECURITY*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SECURITY*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b3f41a3f-deb7-4299-9adf-10b7bd3f865c" Name="%OSDRIVE%\System Volume Information\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\System Volume Information\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b65c1291-7ad9-4216-88b8-755ffb2b1207" Name="*.mui" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.mui" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b92511c3-0ff3-4fff-a57c-7b8a007e4ed7" Name="%OSDRIVE%\ProgramData\Start Menu\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Start Menu\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="be3b52ec-ab70-4e0f-8d9f-fa9a52342be1" Name="%PROGRAMFILES%\Microsoft\Temp\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c7e79739-9e2a-4e9e-b5a3-93d09e40b3be" Name="All scripts" Description="Outside the box" UserOrGroupSid="S-1-2-1" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ce451a47-f426-4504-b80c-7abf62785ec7" Name="%OSDRIVE%\Users\*\PrintHood\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\PrintHood\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d399ffc9-70f1-4a2d-b771-f6ed02af2586" Name="%SYSTEM32%\config\ELAM*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\ELAM*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d39b6b59-fbe4-4cf2-9025-4e057201c8ec" Name="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e2d46a08-fb15-4293-a84e-76e63253b8cb" Name="%SYSTEM32%\config\SYSTEM*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\SYSTEM*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e33d6b47-90b3-43a4-841e-2e700fdb758e" Name="%SYSTEM32%\config\DRIVERS*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\DRIVERS*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e47b03e0-29fc-4af5-bf5b-3edb682b3874" Name="%OSDRIVE%\Users\*" Description="" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1007" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e6baa4d5-c711-45a2-b081-15922bf601e5" Name="%PROGRAMFILES%\*" Description="" UserOrGroupSid="S-1-5-21-3944520657-582373971-2021549477-1007" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e7590ace-be97-4512-983b-c3c420a8c1b7" Name="*.drv" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.drv" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ea1e697e-7b4b-45a6-ab55-c4a3e99c685f" Name="%OSDRIVE%\Users\*\Cookies\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Cookies\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ec8b2a43-e8df-40e7-922c-063facae15f0" Name="*.dll" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.dll" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f1321888-ba19-4725-a571-fe17eda40a57" Name="%OSDRIVE%\ProgramData\Microsoft\WwanSvc\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\WwanSvc\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f54d250c-32e2-4394-9937-c82f8aab4a1a" Name="%OSDRIVE%\Users\*\Start Menu\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Start Menu\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f929609f-32fe-4a1e-9f3d-74db0b17b695" Name="%OSDRIVE%\Users\Public\*" Description="" UserOrGroupSid="S-1-5-32-547" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Public\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fbc65e19-523b-4464-9d36-37835311f11e" Name="%OSDRIVE%\ProgramData\Templates\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\Templates\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fd5aa9b0-7598-4ce9-854f-773de01a591b" Name="%SYSTEM32%\config\DEFAULT*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\DEFAULT*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ff72b1a7-3d8d-43e2-a34a-58e14f47bf01" Name="%OSDRIVE%\Users\*\Downloads\*" Description="This is against plain simplicity of a command copy and defaults." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Downloads\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ffdf1732-9831-481c-a6c7-ce32488c3cf3" Name="%OSDRIVE%\Users\Default User\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\Default User\*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+</AppLockerPolicy>
