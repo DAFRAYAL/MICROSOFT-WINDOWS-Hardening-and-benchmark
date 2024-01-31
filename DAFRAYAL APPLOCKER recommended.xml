@@ -307,6 +307,318 @@
         <FilePathCondition Path="%OSDRIVE%\Users\Default\*" />
       </Conditions>
     </FilePathRule>
+    <FilePathRule Id="71cef75c-78e6-44fb-b94b-5d647f2ee3e3" Name="%PROGRAMFILES%\*" Description="You do not have to install anything. Block this folder immediately." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%PROGRAMFILES%\7-Zip\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ActiveSMART 2.14.0\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ADATA\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Advanced IP Scanner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\afreeCodecVT\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Agenium\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Aiseesoft Studio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Amaya\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\AMD\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Android\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Angry IP Scanner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Anti DDoS Guardian 6.1\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Apple Software Update\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Application Verifier\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ArdfryImaging\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ArgusMonitor\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Astrill\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\AthTek\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Audacity\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Auslogics\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\AVIcodec\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Awesome Miner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Bitcoin\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Bitdefender\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\BitSpirit\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Blender Foundation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Bulk Rename Utility\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Camtech\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CCleaner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CCProxy\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CE Remote Tools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Cheat Engine 7.5\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CheckMAL\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CleverFiles\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Codec Pack - All In 1\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Codec Pack Ultimate\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Codec\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CodecNova\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Colasoft MAC Scanner 2.3\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Combined Community Codec Pack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Common Files\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CommView\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\COMODO\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CONEXANT\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Corsair SSD Toolbox\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Crucial\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\CyberLink\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DatPlot\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DAZ 3D\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DesignSpark\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DIFX\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Digiarty\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DiscretePhoton\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Disk Checker\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DiskFresh\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DiskGenius\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DLL Injector\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Dokan\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\DOSBox-0.74-3\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\dotnet\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\dotnet-core-uninstall\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\EA Games\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Easy Context Menu\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Easy Video Maker\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Easy2Boot\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\EMCO\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Emsisoft Anti-Malware\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ENE\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\eparakstitajs3\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\eParaksts Token Signing\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ERAM\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Essential NetTools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\eXibition Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Faronics\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\File Renamer\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\FlashBoot\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\FlashIntegro\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\FolderPainter\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Fortres Grand\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GCompris-Qt\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GiliSoft\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GIMP 2\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GLInterceptx64_1_3_4\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GMABooster\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GNU Octave\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Go\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GOG Galaxy\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GOODRAM\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Google\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\GridinSoft Anti-Ransomware\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HandBrake\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Hard Disk Sentinel\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Hasleo\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HD Tune\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HDD Guardian\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Helexis\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HexChat\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HitmanPro\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HP\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HTML Help Workshop\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HWiNFO64\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\HxD\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IDEMIA\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IIS Express\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IIS\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Image-Line\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ImDisk\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IMG to ISO\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ImgDrive\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Inkscape\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Inno Setup 6\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\InstallShield Installation Information\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\instruNet\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Intel Desktop Board Audio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Intel Desktop Board\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Intel Desktop Boards\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Intel\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Internet Explorer\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\IObit\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\itcher\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ITU\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\JAM Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Jetico\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\KASHU\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\KC Softwares\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\kdenlive\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Kingston_SSD_Manager\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\KIOXIA Corporation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\K-Lite Codec Pack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LatencyMon\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Latvia eID Middleware\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LAV Filters\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LibreCAD\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LibreOffice\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LLVM\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LMMS\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Locktime Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LovettSoftware\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LSoft Technologies\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MacroCommander\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ManageEngine\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MediaCoder\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MediaHuman\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mega-Nerd\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Memsource Editor\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mercury\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Deployment Toolkit\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft DirectX SDK (June 2010)\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Games\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Help Viewer\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Intune Management Extension\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Office 15\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Office\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft OneDrive\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft SDKs\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft SQL Server\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Update Health Tools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Visual Studio 11.0\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Visual Studio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft VS Code\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Web Tools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Works\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft XNA\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft.NET\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Minidriver\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mixxx\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mobatek\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mobirise4\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ModifiableWindowsApps\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mozilla Firefox\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Mozilla Maintenance Service\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MPC-HC\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MSBuild\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MSECache\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MSI Afterburner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MSXML 4.0\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MultiMon\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MuseScore 3\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MyLanViewer\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NCH Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Net Tools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Nmap\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\no accounting\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Nora Antimalware Scanner\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Notepad++\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NoVirusThanks\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Npcap\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NSIS Uninstall Information\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NSIS\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NVIDIA Corporation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NVIDIA GPU Computing Toolkit\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\obs-studio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\OpenAL\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\OpenFX\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\OpenMPT\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\OpenSCAD\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Opera\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Oracle\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Orange\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Paragon Software\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Pd\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Ping Manager\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Pintosoft\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Pixie\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Power Automate Desktop\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\PowerISO\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\PowerShell\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\PowerToys\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Prio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Process Lasso\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\qemu\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\qTox\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\QuickTime\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\R\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\RAMDisk\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Realtek\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ReClock\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Reference Assemblies\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Resource Hacker\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Rex AVI Codec Pack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\RivaTuner Statistics Server\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Rizonesoft\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\RSSOwl\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\rtools42\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\S1503_2Analysis\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SafeCP\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SafeNet Sentinel\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Samsung SSD 840 EVO Performance Restoration\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Samsung\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SanDisk\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SanDiskGuard Special Edition\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SanityCheck\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Satsuki Decoder Pack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SeaTools5\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SecurityXploded\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\sfktray\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Shark007\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SIF1\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SketchUp\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\smartmontools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SmartWhois\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Snort\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SoftEther VPN Client\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SSD Tweaker\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SSDFresh\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\StarCodec\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Steam\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Streams Remover\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\SWFTools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\System Center Management Packs\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\TamoSoft Throughput Test\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\TAP-Windows\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Teams Installer\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Temp\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Thincast\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\tixati\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\TOSHIBA\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Transcend\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\trueSpace761\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\TuxPaint\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Tweakingcom\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Tweak-SSD v2\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\TXTcollector\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Ubi\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Uninstall Information\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\UrbanVPN\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\USB Boot Drive Creator\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\USB Detect and Launch\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\USBPcap\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VeraCrypt\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VideoLAN\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Vidiot\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Vidosystem\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Virtaal\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VirtualDub\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VMware\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Web Solution Mart\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Western Digital Corporation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Western Digital\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WhoCrashed\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WhySoSlow\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender Advanced Threat Protection\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Identity Foundation\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Kits\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Mail\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Media Player\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Multimedia Platform\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows NT\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Photo Viewer\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Portable Devices\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Security\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Sidebar\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WindowsApps\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WindowsInstallationAssistant\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WindowsPowerShell\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WinHTTrack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WinImage\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\winLAME\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Wireshark\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\X Codec Pack\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\xampp\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Xvid\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\XYplorer\*" />
+      </Exceptions>
+    </FilePathRule>
     <FilePathRule Id="735c045d-46ed-4ee5-b3c0-4ed9710718b8" Name="*.htmlx" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
       <Conditions>
         <FilePathCondition Path="*.htmlx" />
@@ -347,9 +659,14 @@
         <FilePathCondition Path="%PROGRAMFILES%\*" />
       </Conditions>
     </FilePathRule>
-    <FilePathRule Id="8486a05e-50fa-40ca-882b-b1c720def53f" Name="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+    <FilePathRule Id="8486a05e-50fa-40ca-882b-b1c720def53f" Name="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-5-32-547" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8c61b2c9-0960-4f42-9351-9f54ab804f75" Name="*\SystemRoot\*" Description="One of all registry BIOS trojans." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\SystemRoot\*" />
       </Conditions>
     </FilePathRule>
     <FilePathRule Id="90659127-8942-435a-87be-26cda86294c1" Name="*.jpeg" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
@@ -457,7 +774,7 @@
         <FilePathCondition Path="*.cmd" />
       </Conditions>
     </FilePathRule>
-    <FilePathRule Id="b38f8843-f08f-42da-8816-adacbc806b40" Name="%OSDRIVE%\ProgramData\Microsoft\Windows\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+    <FilePathRule Id="b38f8843-f08f-42da-8816-adacbc806b40" Name="%OSDRIVE%\ProgramData\Microsoft\Windows\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-5-32-547" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\Windows\*" />
       </Conditions>
@@ -581,173 +898,6 @@
         </FileHashCondition>
       </Conditions>
     </FileHashRule>
-    <FilePathRule Id="71cef75c-78e6-44fb-b94b-5d647f2ee3e3" Name="%PROGRAMFILES%\*" Description="You do not have to install anything. Block this folder immediately." UserOrGroupSid="S-1-2-1" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%PROGRAMFILES%\*" />
-      </Conditions>
-      <Exceptions>
-        <FilePathCondition Path="%PROGRAMFILES%\7-Zip\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\AMD\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Android\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Angry IP Scanner\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Application Verifier\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\ArdfryImaging\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Audacity\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Bitcoin\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Bitdefender\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Blender Foundation\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Bulk Rename Utility\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\CCleaner\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Cheat Engine 7.5\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\CheckMAL\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\CleverFiles\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Codec\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Common Files\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\CONEXANT\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Crucial\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\CyberLink\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\DAZ 3D\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\DesignSpark\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\DIFX\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\DiskFresh\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\DiskGenius\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Dokan\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\dotnet\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\EA Games\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Easy Context Menu\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Easy Video Maker\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\EMCO\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Emsisoft Anti-Malware\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\ENE\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\eparakstitajs3\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\ERAM\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\FlashBoot\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\FlashIntegro\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\FolderPainter\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Fortres Grand\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\GCompris-Qt\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\GIMP 2\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\GLInterceptx64_1_3_4\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\GNU Octave\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Go\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Google\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\GridinSoft Anti-Ransomware\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\HandBrake\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Hasleo\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\HexChat\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\HitmanPro\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\HWiNFO64\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\HxD\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\IDEMIA\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\IIS Express\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\IIS\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Image-Line\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\ImDisk\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\ImgDrive\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Inkscape\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Intel\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\itcher\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\JAM Software\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\kdenlive\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\LatencyMon\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\LibreOffice\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\LLVM\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\LMMS\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Locktime Software\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\LSoft Technologies\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\ManageEngine\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\MediaHuman\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Mega-Nerd\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Memsource Editor\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Mercury\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Deployment Toolkit\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Intune Management Extension\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Office 15\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Office\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft SQL Server\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Update Health Tools\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Visual Studio\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft VS Code\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Minidriver\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Mixxx\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\ModifiableWindowsApps\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Mozilla Firefox\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\MPC-HC\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\MSBuild\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\MultiMon\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\MuseScore 3\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\no accounting\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Notepad++\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\NoVirusThanks\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Npcap\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\NVIDIA Corporation\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\NVIDIA GPU Computing Toolkit\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\obs-studio\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\OpenMPT\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\OpenSCAD\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Opera\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Oracle\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Orange\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Paragon Software\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Pd\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\PowerISO\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\PowerShell\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\PowerToys\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Prio\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Process Lasso\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\qemu\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\qTox\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\R\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Reference Assemblies\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Rizonesoft\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Samsung\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\SanityCheck\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Shark007\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\SketchUp\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\smartmontools\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Snort\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\SoftEther VPN Client\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\SSD Tweaker\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\SSDFresh\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Steam\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\TAP-Windows\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Thincast\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\tixati\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Transcend\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\TuxPaint\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Tweak-SSD v2\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Uninstall Information\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\UrbanVPN\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\USB Boot Drive Creator\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\USBPcap\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\VeraCrypt\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\VideoLAN\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Vidiot\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\VirtualDub\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Web Solution Mart\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\WhoCrashed\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\WhySoSlow\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender Advanced Threat Protection\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Identity Foundation\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Mail\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Media Player\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Multimedia Platform\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows NT\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Photo Viewer\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Portable Devices\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Security\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Windows Sidebar\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\WindowsApps\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\WindowsPowerShell\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\WinHTTrack\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\WinImage\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\Wireshark\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\X Codec Pack\*" />
-        <FilePathCondition Path="%PROGRAMFILES%\xampp\*" />
-      </Exceptions>
-    </FilePathRule>
   </RuleCollection>
   <RuleCollection Type="Msi" EnforcementMode="Enabled">
     <FilePathRule Id="0536785f-eb8d-44a5-b11c-ebce4dd9399a" Name="%OSDRIVE%\Users\*\AppData\Local\Microsoft\Edge\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
@@ -853,6 +1003,11 @@
     <FilePathRule Id="a54cf0fd-120e-47e0-9169-3e857dcc0c8e" Name="%OSDRIVE%\ProgramData\Templates\*" Description="Shortcuts where electricity goes through with attacks." UserOrGroupSid="S-1-2-1" Action="Deny">
       <Conditions>
         <FilePathCondition Path="%OSDRIVE%\ProgramData\Templates\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a63911bb-a818-4add-b3e2-67a46a4d8edc" Name="*\SystemRoot\*" Description="One of all registry BIOS trojans and robots." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\SystemRoot\*" />
       </Conditions>
     </FilePathRule>
     <FilePathRule Id="a9ff8faa-661b-4288-944e-b94346ab7598" Name="*.exe" Description="This is against malfunction, manipulation in compilation where codes execute autonomously. Great against incompatibility and INstable remotes." UserOrGroupSid="S-1-2-1" Action="Deny">
@@ -977,7 +1132,7 @@
         <FilePathCondition Path="*$*" />
       </Conditions>
     </FilePathRule>
-    <FilePathRule Id="176e92ad-eb83-44b0-9d3c-b7ef116cb0c9" Name="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+    <FilePathRule Id="176e92ad-eb83-44b0-9d3c-b7ef116cb0c9" Name="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-5-32-547" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\*\Microsoft\*" />
       </Conditions>
@@ -997,7 +1152,7 @@
         <FilePathCondition Path="%OSDRIVE%\Users\*\Templates\*" />
       </Conditions>
     </FilePathRule>
-    <FilePathRule Id="20734233-3c44-45dc-82cf-009ce6d7728f" Name="%OSDRIVE%\ProgramData\Microsoft\Windows\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-2-1" Action="Deny">
+    <FilePathRule Id="20734233-3c44-45dc-82cf-009ce6d7728f" Name="%OSDRIVE%\ProgramData\Microsoft\Windows\*" Description="Just a folder without executables or scripts case" UserOrGroupSid="S-1-5-32-547" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%OSDRIVE%\ProgramData\Microsoft\Windows\*" />
       </Conditions>
@@ -1175,6 +1330,11 @@
     <FilePathRule Id="d39b6b59-fbe4-4cf2-9025-4e057201c8ec" Name="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
       <Conditions>
         <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Mozilla\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="dc908213-34b9-4e81-989d-de30fb6551fe" Name="*\SystemRoot\*" Description="One of all registry BIOS trojans and robots." UserOrGroupSid="S-1-2-1" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\SystemRoot\*" />
       </Conditions>
     </FilePathRule>
     <FilePathRule Id="e2d46a08-fb15-4293-a84e-76e63253b8cb" Name="%SYSTEM32%\config\SYSTEM*" Description="" UserOrGroupSid="S-1-2-1" Action="Deny">
