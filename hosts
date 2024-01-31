@@ -4,36 +4,60 @@
 0.0.0.0 127.0.0.1
 ::1 127.0.0.1
 exzodfya 127.0.0.1
+www.exzodfya 127.0.0.1
 exzodfya.local 127.0.0.1
+www.exzodfya.local 127.0.0.1
+#YouCanUseTheseNetworkNamesAsDNSinNameResolutionForPureBandwidth
 8.26.56.10 comodo.privatedns1.dafrayal.com
 8.20.247.10 comodo.privatedns2.dafrayal.com
 216.146.35.35 dyn.privatedns1.dafrayal.com
 216.146.36.36 dyn.privatedns2.dafrayal.com
+8.26.56.10 www.comodo.privatedns1.dafrayal.com
+8.20.247.10 www.comodo.privatedns2.dafrayal.com
+216.146.35.35 www.dyn.privatedns1.dafrayal.com
+216.146.36.36 www.dyn.privatedns2.dafrayal.com
 #
 #Dills
 facebook.com 223.255.255.255
 223.255.255.255 facebook.com
-#google.com 223.255.255.255
-#223.255.255.255 google.com
 facebook.net 223.255.255.255
 223.255.255.255 facebook.net
 meta.com 223.255.255.255
 223.255.255.255 meta.com
 meta.net 223.255.255.255
 223.255.255.255 meta.net
+www.facebook.com 223.255.255.255
+223.255.255.255 www.facebook.com
+www.facebook.net 223.255.255.255
+223.255.255.255 www.facebook.net
+www.meta.com 223.255.255.255
+223.255.255.255 www.meta.com
+www.meta.net 223.255.255.255
+223.255.255.255 www.meta.net
+#
+#CodeSignedCertifiedConnections-PleaseDisableDNSclientService
+google.com 8.8.4.4
+8.8.4.4 google.com
+www.google.com 8.8.4.4
+8.8.4.4 www.google.com
 #
 #WhileDafrayal.ComDomainInternetProtocolAddressStandsAsRelay
 #InternetIdentificationOnAdapterWillSucceed
 #CanBeไทย
+#PingMeToKnow
 127.0.0.1 dafrayal.com
+127.0.0.1 www.dafrayal.com
 #dafrayal.com 127.0.0.1
 20.79.33.248 dafrayal.com
-#
+20.79.33.248 www.dafrayal.com
+#PingMeToKnow
 internet.dafrayal.com 169.254.252.68
 169.254.252.68 internet.dafrayal.com
+www.internet.dafrayal.com 169.254.252.68
+169.254.252.68 www.internet.dafrayal.com
 #
 127.0.0.1 192.168.137.1
-#
+#You
 localhost 127.0.0.1
 127.0.0.1 localhost
 lan 127.0.0.1
@@ -44,24 +68,45 @@ local 127.0.0.1
 127.0.0.1 local
 local.localhost 127.0.0.1
 127.0.0.1 local.localhost
+www.localhost 127.0.0.1
+127.0.0.1 www.localhost
+www.lan 127.0.0.1
+127.0.0.1 www.lan
+www.host 127.0.0.1
+127.0.0.1 www.host
+www.local 127.0.0.1
+127.0.0.1 www.local
+www.local.localhost 127.0.0.1
+127.0.0.1 www.local.localhost
 #InLocalCaseReplaceWithไทย
 #dafrayal.com local.localhost
 local.localhost dafrayal.com
-#
+#NoPingNeeded
 network.dafrayal.com 127.0.0.1
-#
+www.network.dafrayal.com 127.0.0.1
+#ToYourself
 loop 127.0.0.1
 127.0.0.1 loop
 loopback 127.0.0.1
 127.0.0.1 loopback
-#
+www.loop 127.0.0.1
+127.0.0.1 www.loop
+www.loopback 127.0.0.1
+127.0.0.1 www.loopback
+#NoNeedToPing-YouCanUseTheseNetworkNamesAsDNSinNameResolutionForPureBandwidth
 hoist.dafrayal.com 0.0.0.0
 loophole.dafrayal.com 127.0.0.1
+www.hoist.dafrayal.com 0.0.0.0
+www.loophole.dafrayal.com 127.0.0.1
 #
 #dafrayal.com 127.0.0.1
+#NoPingNeeded
 dafrayal.com 169.254.252.68
+#PingMeToKnow
 20.117.36.55 network.dafrayal.com
 20.117.36.55 web.dafrayal.com
+20.117.36.55 www.network.dafrayal.com
+20.117.36.55 www.web.dafrayal.com
 #
 ::1 127.0.0.1
 #CanBeUsedAsIntranetProxyFromNetworkBridgeAsไทย
@@ -74,14 +119,22 @@ a 223.255.255.255
 b 223.255.255.255
 c 223.255.255.255
 d 223.255.255.255
+www.0 223.255.255.255
+www.a 223.255.255.255
+www.b 223.255.255.255
+www.c 223.255.255.255
+www.d 223.255.255.255
 #HAUNIVProtocolsThrough
 195.201.245.217 192.168.137.1
 hauniv.edu 192.168.137.1
+www.hauniv.edu 192.168.137.1
 #AddedByDockerDesktop
 #ToAllowTheSameKubeContextToWorkOnTheHostAndTheContainer
 127.0.0.1 kubernetes.docker.internal
+127.0.0.1 www.kubernetes.docker.internal
 #EndOfSection
 127.0.0.1 cryptomator-vault
+127.0.0.1 www.cryptomator-vault
 #DomainsCheckWhatYouAreOnFromBeforeEnteringWithout(#)#Replace#
 #Dafrayal.com#Or#Web.Dafrayal.Com
 #With#(blue#or#ไทย)
@@ -98,11 +151,27 @@ localdomain 223.255.255.255
 223.255.255.255 localdomain
 domain 223.255.255.255
 223.255.255.255 domain
-#
+www.invalid 223.255.255.255
+223.255.255.255 www.invalid
+www.intranet 223.255.255.255
+223.255.255.255 www.intranet
+www.internal 223.255.255.255
+223.255.255.255 www.internal
+www.private 223.255.255.255
+223.255.255.255 www.private
+www.localdomain 223.255.255.255
+223.255.255.255 www.localdomain
+www.domain 223.255.255.255
+223.255.255.255 www.domain
+#DAFRAYALMACHINE
 lan exzodfya.local
 exzodfya.local lan
 host exzodfya.local
 exzodfya.local host
+www.lan www.exzodfya.local
+www.exzodfya.local www.lan
+www.host www.exzodfya.local
+www.exzodfya.local www.host
 #
 home 223.255.255.255
 223.255.255.255 home
@@ -120,6 +189,22 @@ _hotspot_.m2m 223.255.255.255
 223.255.255.255 _hotspot_.m2m
 hotspot.m2m 223.255.255.255
 223.255.255.255 hotspot.m2m
+www.home 223.255.255.255
+223.255.255.255 www.home
+www.corp 223.255.255.255
+223.255.255.255 www.corp
+www.home.arpa 223.255.255.255
+223.255.255.255 www.home.arpa
+www.test 223.255.255.255
+223.255.255.255 www.test
+223.255.255.255 www.wpad
+www.wpad 223.255.255.255
+223.255.255.255 www.onion
+www.onion 223.255.255.255
+www._hotspot_.m2m 223.255.255.255
+223.255.255.255 www._hotspot_.m2m
+www.hotspot.m2m 223.255.255.255
+223.255.255.255 www.hotspot.m2m
 #
 orbilogin.com 223.255.255.255
 223.255.255.255 orbilogin.com
@@ -135,3 +220,26 @@ cp.cloudflare.com 223.255.255.255
 223.255.255.255 cp.cloudflare.com
 nonexistent.cloudflare.com 223.255.255.255
 223.255.255.255 nonexistent.cloudflare.com
+www.orbilogin.com 223.255.255.255
+223.255.255.255 www.orbilogin.com
+www.orbilogin.net 223.255.255.255
+223.255.255.255 www.orbilogin.net
+www.routerlogin.net 223.255.255.255
+223.255.255.255 www.routerlogin.net
+www.routerlogin.com 223.255.255.255
+223.255.255.255 www.routerlogin.com
+www.router.asus.com 223.255.255.255
+223.255.255.255 www.router.asus.com
+www.cp.cloudflare.com 223.255.255.255
+223.255.255.255 www.cp.cloudflare.com
+www.nonexistent.cloudflare.com 223.255.255.255
+223.255.255.255 www.nonexistent.cloudflare.com
+#ByeStayWelcome
+www.www 0.0.0.0
+0.0.0.0 www.www
+www 0.0.0.0
+0.0.0.0 www
+www.www.www 0.0.0.0
+0.0.0.0 www.www.www
+#Explore
+#Publish
