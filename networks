@@ -1,20 +1,10 @@
-# Copyright (c) 1993-1999 Microsoft Corp.
-#
-# This file contains network name/network number mappings for 
-# local networks. Network numbers are recognized in dotted decimal form.
-#
-# Format:
-#
-# <network name>  <network number>     [aliases...]  [#<comment>]
-#
-# For example:
-#
-#    loopback     127
-#    campus       284.122.107
-#    london       284.122.108
+#UsingWwwForOkayEfficiency
 loopback                 127
 loopback                 169.254.252.68
 loopback                 169
+www.loopback             127
+www.loopback             169.254.252.68
+www.loopback             169
 #Domain-Name-Services
 127.0.1.1 127.0.0.1
 127.0.0.1 127.0.0.1
@@ -25,15 +15,23 @@ www.exzodfya 127.0.0.1
 exzodfya.local 127.0.0.1
 www.exzodfya.local 127.0.0.1
 #YouCanUseTheseNetworkNamesAsDNSinNameResolutionForPureBandwidth
-8.26.56.10 comodo.privatedns1.dafrayal.com
-8.20.247.10 comodo.privatedns2.dafrayal.com
+8.26.56.10 itarian.privatedns1.dafrayal.com
+8.20.247.10 itarian.privatedns2.dafrayal.com
 216.146.35.35 dyn.privatedns1.dafrayal.com
 216.146.36.36 dyn.privatedns2.dafrayal.com
-8.26.56.10 www.comodo.privatedns1.dafrayal.com
-8.20.247.10 www.comodo.privatedns2.dafrayal.com
+8.26.56.10 www.itarian.privatedns1.dafrayal.com
+8.20.247.10 www.itarian.privatedns2.dafrayal.com
 216.146.35.35 www.dyn.privatedns1.dafrayal.com
 216.146.36.36 www.dyn.privatedns2.dafrayal.com
-#
+#BetterUseThese
+8.8.4.4 google.dnsv4.1.dafrayal.com
+8.8.8.8 google.dnsv4.2.dafrayal.com
+2001:4860:4860:0:0:0:0:8844 google.dnsv6.1.dafrayal.com
+2001:4860:4860:0:0:0:0:8888 google.dnsv6.2.dafrayal.com
+8.8.4.4 www.google.dnsv4.1.dafrayal.com
+8.8.8.8 www.google.dnsv4.2.dafrayal.com
+2001:4860:4860:0:0:0:0:8844 www.google.dnsv6.1.dafrayal.com
+2001:4860:4860:0:0:0:0:8888 www.google.dnsv6.2.dafrayal.com
 #Dills
 facebook.com 223.255.255.255
 223.255.255.255 facebook.com
@@ -52,7 +50,7 @@ www.meta.com 223.255.255.255
 www.meta.net 223.255.255.255
 223.255.255.255 www.meta.net
 #
-#CodeSignedCertifiedConnections-PleaseDisableDNSclientService
+#CodeSignedCertifiedConnections-YouMayOrMayNotDisableDNSclientService
 google.com 8.8.4.4
 8.8.4.4 google.com
 www.google.com 8.8.4.4
@@ -65,8 +63,8 @@ www.google.com 8.8.4.4
 127.0.0.1 dafrayal.com
 127.0.0.1 www.dafrayal.com
 #dafrayal.com 127.0.0.1
-20.79.33.248 dafrayal.com
-20.79.33.248 www.dafrayal.com
+#20.79.33.248 dafrayal.com
+#20.79.33.248 www.dafrayal.com
 #PingMeToKnow
 internet.dafrayal.com 169.254.252.68
 169.254.252.68 internet.dafrayal.com
