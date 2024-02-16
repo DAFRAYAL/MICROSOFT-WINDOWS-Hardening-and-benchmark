@@ -1,3 +1,4 @@
+#BuggedOutWithGPFilesNeedsRemake
 <AppLockerPolicy Version="1">
   <RuleCollection Type="Appx" EnforcementMode="Enabled">
     <FilePublisherRule Id="71c7adcc-d8c2-4c4e-8aba-701bd4bb6011" Name="Signed by Microsoft Corporation" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
