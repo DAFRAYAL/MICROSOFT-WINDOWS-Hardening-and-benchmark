@@ -1,17 +1,96 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
 #UsingWwwForOkayEfficiency
-#HostOrComputerName
-127.0.1.1 127.0.0.1
-127.0.0.1 127.0.0.1
-0.0.0.0 127.0.0.1
-::1 127.0.0.1
-exzodfya 127.0.0.1
-www.exzodfya 127.0.0.1
-exzodfya.local 127.0.0.1
-www.exzodfya.local 127.0.0.1
-#dafrayal 127.0.0.1
-#www.dafrayal 127.0.0.1
-#dafrayal.com 127.0.0.1
-#www.dafrayal.com 127.0.0.1
+127.0.0.1 localhost
+www.loopback localhost
+www.127.0.0.1 localhost
+#
+0.0.0.0 localhost
+www.localhost localhost
+www.0.0.0.0 localhost
+#
+dafrayal localhost
+www.dafrayal localhost
+dafrayal.local localhost
+www.dafrayal.local localhost
+local.dafrayal localhost
+www.local.dafrayal localhost
+localhost.dafrayal localhost
+www.localhost.dafrayal localhost
+dafrayal.localhost localhost
+www.dafrayal.localhost localhost
+#
+#
+#DAFRAYALMACHINE
+lan dafrayal
+host dafrayal
+www.lan dafrayal
+www.host dafrayal
+lan www.dafrayal
+host www.dafrayal
+www.lan www.dafrayal
+www.host www.dafrayal
+#
+#
+#CreateAndEnableKM-TESTadapterOrHyper-VadapterWith12.255.0.1DefaultGatewayWithWINS
+#
+#
+12.255.0.1 localhost
+www.12.255.0.1 localhost
+##P2PTCP/UDP-MicrosoftKM-TESTadapter/Gateway/NRP/DirectAccess/DomainGatewayIsIntranetSeparateAddress
+12.255.0.1 fame.dafrayal.com
+www.12.255.0.1 fame.dafrayal.com
+#
+#
+#HAUNIVProtocolsThrough
+#195.201.245.217 192.168.137.1
+#hauniv.edu 192.168.137.1
+#www.hauniv.edu 192.168.137.1
+#
+#
+#CanBeUsedAsIntranetProxyFromNetworkBridgeAsไทย
+#OrAs
+#169.254.252.68 192.168.137.1
+#192.168.137.1 127.0.0.1
+#
+#
+#InLocalCaseReplaceDafrayal.ComWithไทย
+#local.localhost dafrayal.com
+#
+#
+#WhileDafrayal.ComDomainInternetProtocolAddressStandsAsRelay
+#InternetIdentificationOnAdapterWillSucceed
+#CanBeไทย
+#127.0.0.1 dafrayal.com
+#127.0.0.1 www.dafrayal.com
+#
+#
+#CodeSignedCertifiedConnections-YouMayOrMayNotDisableDNSclientService
+google.com 8.8.4.4
+8.8.4.4 google.com
+www.google.com 8.8.4.4
+8.8.4.4 www.google.com
+#
+#
 #Domain-Name-Services
 #YouCanUseTheseNetworkNamesAsDNSinNameResolutionForPureBandwidth
 8.26.56.10 itarian.privatedns1.dafrayal.com
@@ -40,94 +119,17 @@ www.exzodfya.local 127.0.0.1
 #223.255.255.255 meta.com
 #meta.net 223.255.255.255
 #223.255.255.255 meta.net
-www.facebook.com 223.255.255.255
-223.255.255.255 www.facebook.com
-www.facebook.net 223.255.255.255
-223.255.255.255 www.facebook.net
-www.meta.com 223.255.255.255
-223.255.255.255 www.meta.com
-www.meta.net 223.255.255.255
-223.255.255.255 www.meta.net
+#www.facebook.com 223.255.255.255
+#223.255.255.255 www.facebook.com
+#www.facebook.net 223.255.255.255
+#223.255.255.255 www.facebook.net
+#www.meta.com 223.255.255.255
+#223.255.255.255 www.meta.com
+#www.meta.net 223.255.255.255
+#223.255.255.255 www.meta.net
 #
-#CodeSignedCertifiedConnections-YouMayOrMayNotDisableDNSclientService
-google.com 8.8.4.4
-8.8.4.4 google.com
-www.google.com 8.8.4.4
-8.8.4.4 www.google.com
 #
-#WhileDafrayal.ComDomainInternetProtocolAddressStandsAsRelay
-#InternetIdentificationOnAdapterWillSucceed
-#CanBeไทย
-#PingMeToKnow
-127.0.0.1 dafrayal.com
-127.0.0.1 www.dafrayal.com
-#dafrayal.com 127.0.0.1
-#20.79.33.248 dafrayal.com
-#20.79.33.248 www.dafrayal.com
-#PingMeToKnow
-internet.dafrayal.com 169.254.252.68
-169.254.252.68 internet.dafrayal.com
-www.internet.dafrayal.com 169.254.252.68
-169.254.252.68 www.internet.dafrayal.com
-#
-127.0.0.1 192.168.137.1
-#You
-localhost 127.0.0.1
-127.0.0.1 localhost
-lan 127.0.0.1
-127.0.0.1 lan
-host 127.0.0.1
-127.0.0.1 host
-local 127.0.0.1
-127.0.0.1 local
-local.localhost 127.0.0.1
-127.0.0.1 local.localhost
-www.localhost 127.0.0.1
-127.0.0.1 www.localhost
-www.lan 127.0.0.1
-127.0.0.1 www.lan
-www.host 127.0.0.1
-127.0.0.1 www.host
-www.local 127.0.0.1
-127.0.0.1 www.local
-www.local.localhost 127.0.0.1
-127.0.0.1 www.local.localhost
-#InLocalCaseReplaceWithไทย
-#dafrayal.com local.localhost
-local.localhost dafrayal.com
-#NoPingNeeded
-network.dafrayal.com 127.0.0.1
-www.network.dafrayal.com 127.0.0.1
-#ToYourself
-loop 127.0.0.1
-127.0.0.1 loop
-loopback 127.0.0.1
-127.0.0.1 loopback
-www.loop 127.0.0.1
-127.0.0.1 www.loop
-www.loopback 127.0.0.1
-127.0.0.1 www.loopback
-#NoNeedToPing-YouCanUseTheseNetworkNamesAsDNSinNameResolutionForPureBandwidth
-hoist.dafrayal.com 0.0.0.0
-loophole.dafrayal.com 127.0.0.1
-www.hoist.dafrayal.com 0.0.0.0
-www.loophole.dafrayal.com 127.0.0.1
-#
-#dafrayal.com 127.0.0.1
-#NoPingNeeded
-dafrayal.com 169.254.252.68
-#PingMeToKnow
-20.117.36.55 network.dafrayal.com
-20.117.36.55 web.dafrayal.com
-20.117.36.55 www.network.dafrayal.com
-20.117.36.55 www.web.dafrayal.com
-#
-::1 127.0.0.1
-#CanBeUsedAsIntranetProxyFromNetworkBridgeAsไทย
-#OrAs
-169.254.252.68 192.168.137.1
-192.168.137.1 127.0.0.1
-#
+#WiRegistry
 0 223.255.255.255
 a 223.255.255.255
 b 223.255.255.255
@@ -138,17 +140,8 @@ www.a 223.255.255.255
 www.b 223.255.255.255
 www.c 223.255.255.255
 www.d 223.255.255.255
-#HAUNIVProtocolsThrough
-195.201.245.217 192.168.137.1
-hauniv.edu 192.168.137.1
-www.hauniv.edu 192.168.137.1
-#AddedByDockerDesktop
-#ToAllowTheSameKubeContextToWorkOnTheHostAndTheContainer
-127.0.0.1 kubernetes.docker.internal
-127.0.0.1 www.kubernetes.docker.internal
-#EndOfSection
-127.0.0.1 cryptomator-vault
-127.0.0.1 www.cryptomator-vault
+#
+#
 #DomainsCheckWhatYouAreOnFromBeforeEnteringWithout(#)#Replace#
 #Dafrayal.com#Or#Web.Dafrayal.Com
 #With#(blue#or#ไทย)
@@ -177,15 +170,7 @@ www.localdomain 223.255.255.255
 223.255.255.255 www.localdomain
 www.domain 223.255.255.255
 223.255.255.255 www.domain
-#DAFRAYALMACHINE
-lan exzodfya.local
-exzodfya.local lan
-host exzodfya.local
-exzodfya.local host
-www.lan www.exzodfya.local
-www.exzodfya.local www.lan
-www.host www.exzodfya.local
-www.exzodfya.local www.host
+#
 #
 home 223.255.255.255
 223.255.255.255 home
