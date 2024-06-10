@@ -8,6 +8,6 @@ Classes, Windows runtime, HKEY_USERS can only be read by group/user combined and
 
 The servers software file system maps, high-end security software maps or internet demanding file system maps like steam for gaming are given the read only access as for users themselves and the group/user combination in users management console that you made is given the same read only by any chance removing authenticated users, and giving your own single user account profile read and execute permission.
 
-To wrap it up you deny logon locally in User Rights Assignments to the group/user combination that you made and all other deny entries like deny logon as a batch job or deny remote desktop have guests group blocked.
+To wrap it up you deny logon locally in User Rights Assignments to the group/user combination that you made and all other deny entries like deny logon as a batch job or deny remote desktop have guests group blocked. Don't forget to create a group within itself for your single user account profile itself it will add up automatically to your user profile.
 
 The end. Enjoy.
