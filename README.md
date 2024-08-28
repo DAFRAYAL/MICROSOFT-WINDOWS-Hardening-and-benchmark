@@ -1,4 +1,5 @@
-Policies will be uploaded when they are finished without error.
+Skip over existing policy definitions by adding missing definitions in WINDOWS system file folder directory.
+Use POWERSHELL 7 to enter Microsoft Management Console, etc.
 
 You see SYSTEM without remote access in management console components defaults.
 
@@ -15,5 +16,7 @@ SNORT automatic service with community rules, COMODO OPENEDR, BESTCRYPT data she
 To wrap it up you deny logon locally in User Rights Assignments to the group/user combination that you made and all other deny entries like deny logon as a batch job or deny remote desktop have guests group blocked. Don't forget to create a group within itself for your single user account profile itself it will add up automatically to your user profile.
 
 Use encrypted containers or encrypted virtual hard drives instead of disk encryptions for any work since internet.
+
+Check if LOCALHOST and COMPUTER NAME is in internet options restricted sites list.
 
 The end. Enjoy.
