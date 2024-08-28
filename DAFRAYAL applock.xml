@@ -1,0 +1,714 @@
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="Enabled">
+    <FilePublisherRule Id="48b49317-820e-43e9-9235-8b8be78119ad" Name="Signed by *" Description="" UserOrGroupSid="S-1-5-32-546" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="507b6087-70a0-47e6-b51e-8d12fea9fb81" Name="Any" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="64576d82-9ba1-466d-b9c2-102f6634af63" Name="Signed by *" Description="" UserOrGroupSid="S-1-5-17" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="c1bb7e50-d4eb-48a4-a43e-4458262ac69b" Name="Signed by *" Description="" UserOrGroupSid="S-1-5-7" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+  <RuleCollection Type="Dll" EnforcementMode="Enabled" />
+  <RuleCollection Type="Exe" EnforcementMode="Enabled">
+    <FilePublisherRule Id="1725c5c5-c6e7-4c38-b1bf-48f71adcc5dd" Name="Signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1004" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="61b45fac-6821-4b6b-81d3-61a6b808d863" Name="Signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="0101f06b-b886-4dec-8dcb-579e0c8b8da6" Name="%PROGRAMFILES%\Windows Sidebar\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Sidebar\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="044be82b-bc39-4d41-8fc3-0269a140bc11" Name="*\*.bat" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.bat" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="10d0a62b-a63d-4d2e-a0b7-e921cc6aa026" Name="*\*.sys" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.sys" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="14cca741-1cb9-4e85-998d-c146b2821995" Name="*\msedge.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\msedge.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1898aba8-f57e-4e04-8611-0b6440598610" Name="%PROGRAMFILES%\*" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1faaf706-e48c-49de-82d5-19b1b6e20885" Name="*\*.vbe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.vbe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="25b635bb-ba30-4b35-b9a2-8a6dc3d3d815" Name="%SYSTEM32%\drivers\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\drivers\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="27d6155a-b9c6-4232-ad72-abd52b4c1618" Name="*\azuread.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\azuread.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2b0e3eea-ba3d-47d0-95bb-c6908b942f37" Name="%WINDIR%\*" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2ea0ba70-667e-47ff-8a71-9ef73337bf96" Name="%PROGRAMFILES%\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+      <Exceptions>
+        <FilePathCondition Path="%PROGRAMFILES%\Application Verifier\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\ASIO4ALL v2\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\AzureConnectedMachineAgent\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Common Files\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\COMODO\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Hyper-V\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Jetico\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\LibreOffice\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Intune Management Extension\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Monitoring Agent\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft SDKs\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Update Health Tools\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Visual Studio\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\MSBuild\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Nmap\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Notepad++\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Npcap\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\NuGet\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Parsec Virtual USB Adapter Driver\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Parsec\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\PowerShell\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Reference Assemblies\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Steam\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Uninstall Information\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\VeraCrypt\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender Advanced Threat Protection\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Defender\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\Windows Kits\*" />
+        <FilePathCondition Path="%PROGRAMFILES%\WindowsApps\*" />
+      </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="30fee101-899b-4fd4-b176-2d8a23e67da6" Name="%SYSTEM32%\config\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3820132b-8151-48ce-9bf4-3a459c0a6e9e" Name="*\ntoskrnl.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\ntoskrnl.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="385781cc-6015-4a86-8b7d-6fee878dfeb2" Name="*\LsaIso.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\LsaIso.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3b2ea022-6293-4e82-bedb-f40666f8deac" Name="*\wudfhost.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\wudfhost.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="41d572a6-4005-4099-a574-33c175dcfc5a" Name="%WINDIR%\*" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1004" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4406b6b4-19fd-4960-b78b-e23f22de2f5f" Name="%PROGRAMFILES%\Internet Explorer\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Internet Explorer\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="46802b71-bd59-4a6b-8ad1-30aa8365007c" Name="%OSDRIVE%\Users\*" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="48fbefed-6fb9-4c97-a5f8-427040bee16d" Name="%OSDRIVE%\System Volume Information\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\System Volume Information\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="63031b59-889f-4eae-8749-168785b41c4e" Name="%OSDRIVE%\ProgramData\*" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6a394e10-bde9-4f6c-89ae-687471be320e" Name="%OSDRIVE%\$Recycle.Bin\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\$Recycle.Bin\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6b4accc0-abab-4f60-b551-de7290f8fc67" Name="*\microsoft.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\microsoft.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6e223919-0f86-4e92-b9e6-12ff27cb3335" Name="*\mssense.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\mssense.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6f3d6dea-f784-4b79-95b7-aaaf6ab23c17" Name="%OSDRIVE%\Documents and Settings\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Documents and Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="70771ea3-a7b5-4e5e-bf62-550c3902dc04" Name="*\*.pyw" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.pyw" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="71c8f218-159a-42cd-b18c-a1dc75df87d3" Name="%OSDRIVE%\ProgramData\*" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1004" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\ProgramData\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="77dadc7a-7397-4fca-9cd4-0058dd9125cd" Name="*" Description="" UserOrGroupSid="S-1-5-32-546" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="786fd59b-385e-4deb-ae42-8fd551f45116" Name="*\*.dll" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.dll" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="78f307af-4f4d-4860-b3f6-13a74af5037f" Name="*\WindowsPowerShell\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\WindowsPowerShell\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7a046ba0-6c71-4337-b369-278b6a2b7c86" Name="*\securekernel.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\securekernel.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7b2b180f-4321-475e-8734-cc0532107569" Name="*\*.py" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.py" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7dc9361f-0daf-4d8e-b5d3-1aac8e833710" Name="%PROGRAMFILES%\Alps\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Alps\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7f0eb878-ddc4-4575-8f06-a8b57149471e" Name="*\*.js" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.js" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="80e0e72c-f392-44b3-af65-6d4be9f2755c" Name="*\audiodg.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\audiodg.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="80ed64b6-c95a-4835-aedf-d2ee21477a14" Name="%OSDRIVE%\Users\*\Downloads\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\Downloads\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="81a22f66-f1dc-40a0-a40f-58245b98b934" Name="*\*.pif" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.pif" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8a29eeb8-bf50-4cbf-9ac3-6a1a6f4a5d5a" Name="*\reg.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\reg.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8aaf37a1-25d5-4127-909a-b034a3a6c2fc" Name="%WINDIR%\INF\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\INF\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8b75e9fe-3cd8-414b-b30e-8045ead63094" Name="%SYSTEM32%\rundll32.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\rundll32.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8e9c75a0-3ad1-4a05-83bf-89326439594f" Name="%OSDRIVE%" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="92f78b2d-5f49-4dc5-a78b-3c8ea5f862d4" Name="*\*Network*" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*Network*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="959c7e20-4831-483d-bc19-f2dd0c1e8a89" Name="*\*.cmd" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.cmd" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9848b9bc-529a-40dd-9635-7536a45cc51d" Name="All files" Description="Allows members of everyone group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9ca6d96f-7fda-43c9-b122-24547a57dff9" Name="*\*.jse" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.jse" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9d9cccb3-de12-44cf-acd4-48e3eb398762" Name="%SYSTEM32%\svchost.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\svchost.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a5a7edac-0e05-44a5-bd6d-4226c5f18c04" Name="*\cmd.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\cmd.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a6057cb4-c5b8-4ddf-8e99-a8012fc88528" Name="*\*.drv" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.drv" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a964482d-80bb-4800-a135-90d04f47b831" Name="*\azuread\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\azuread\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="aab7d680-b345-4afa-8443-101c038fe42e" Name="*\*.vbs" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.vbs" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ac721f60-f757-4aed-8da3-fb98615cc1d0" Name="*\SystemRoot\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\SystemRoot\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ad3c27d5-e25f-4a04-9526-24a0be8e965c" Name="*" Description="" UserOrGroupSid="S-1-5-17" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b3bc203a-57e2-4610-add5-6f184eef108b" Name="*\regedit.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\regedit.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b4a02979-03a1-4067-8aef-77011d08bb01" Name="*\lsass.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\lsass.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b8f91607-499c-4f51-8a96-1dc3b1cdd8ba" Name="*\*.inf" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.inf" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="bca7f20a-d7db-45e0-9d25-3e28a83eb6d2" Name="X:\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="X:\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="bd59cc48-fa1b-4b2f-801a-8eb6ba477494" Name="*\runtimebroker.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\runtimebroker.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="bf3e28ef-ecf8-4260-b358-1bda1db02f79" Name="%OSDRIVE%\Users\*" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="bfc95dd0-490a-4691-b864-40297edd23e1" Name="*\windows.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\windows.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c1b8409d-0b70-42c7-b88c-f2c8798fdddc" Name="*\powershell.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\powershell.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c78b6dd5-114b-4a4b-b324-f56d062277b3" Name="*\explorer.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\explorer.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ca253a8c-6faa-4dbd-af13-2f54dbc82e5b" Name="*" Description="" UserOrGroupSid="S-1-5-7" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d6736707-2c0a-4ece-8847-c406b39ca7be" Name="%PROGRAMFILES%\*" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1004" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ddea1189-3d37-4bff-8d02-fd3ea1c94aab" Name="*\lsm.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\lsm.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="eaaf40fd-e96c-4170-838c-5a0cdf87b5c2" Name="*\*.com" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.com" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="eac21c79-cde7-4a6e-8a8e-2eef5503b123" Name="*\ctfmon.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\ctfmon.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f46f0324-fa57-45a3-a1bc-54fb0d875bfa" Name="%PROGRAMFILES%\Microsoft Help Viewer\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\Microsoft Help Viewer\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f4ba456b-67bc-4391-996e-6075d27de850" Name="%SYSTEM32%\dllhost.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\dllhost.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f7353daa-b835-4bad-9f8f-27a428979668" Name="%OSDRIVE%\Users\*" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1004" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f8c60e73-3157-4807-9ba1-abe42ea5b4c1" Name="*\msmpeng.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\msmpeng.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fd6778e5-eec2-4cd4-8a1d-9eb35ce4c25f" Name="*\WmiPrvSE.exe" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\WmiPrvSE.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ff33314a-61b1-4b9a-89d8-f6d57104aa12" Name="*\*.ps1" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*.ps1" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Msi" EnforcementMode="Enabled">
+    <FilePublisherRule Id="425d6741-bca4-4d68-a792-8f4135016710" Name="All digitally signed Windows Installer files" Description="Allows everyone to run digitally signed Windows Installer files." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="*">
+          <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="430b6780-4dff-4b34-a000-5093ab8cb36d" Name="%OSDRIVE%\Documents and Settings\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Documents and Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4d4c6956-5363-4418-880b-41284092e3eb" Name="All Windows Installer files in %systemdrive%\Windows\Installer" Description="Allows everyone to run all Windows Installer files located in %systemdrive%\Windows\Installer." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Installer\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="55f0460a-c7d0-401d-8695-7a7c45b0ccb9" Name="%OSDRIVE%\System Volume Information\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\System Volume Information\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5d19638b-64a2-40f0-821e-e476b96aef93" Name="*.*" Description="" UserOrGroupSid="S-1-5-32-546" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="72f44b2e-634a-4993-a06a-0dd31d66d1b3" Name="X:\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="X:\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="aa4f2aee-5875-441c-b52b-14400c9eece3" Name="*.*" Description="" UserOrGroupSid="S-1-5-17" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d2fe420e-254b-4fcb-9f33-44baa35082c0" Name="*.*" Description="" UserOrGroupSid="S-1-5-7" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="df8a37b8-3d64-491d-bb3b-3e24d72e6a48" Name="%OSDRIVE%\$Recycle.Bin\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\$Recycle.Bin\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e10533ea-08cc-41d9-830b-4f075e1dd128" Name="All Windows Installer files" Description="Allows members of the everyone group to run all Windows Installer files." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Script" EnforcementMode="Enabled">
+    <FilePublisherRule Id="ff206377-4133-40f1-94cf-507402379b39" Name="Signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="Allows everyone to run all digitally signed WINDOWS scripts." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="*">
+          <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="043ddf11-1340-44bd-8653-ac7c114d5e43" Name="*\ntoskrnl*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\ntoskrnl*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="0e956307-0393-47ab-bc21-46aa4050a92c" Name="*\WmiPrvSE*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\WmiPrvSE*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="151314a6-3169-4440-ac25-058de5b03083" Name="*\windows*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\windows*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="158f6e21-3356-4971-a739-431ce200c565" Name="*\svchost*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\svchost*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="15aa42ca-02a6-4aaa-9342-551a58c5066b" Name="*\dwm*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\dwm*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1b41b056-3d52-4e82-b2fc-027a3b33f2f9" Name="%OSDRIVE%\Documents and Settings\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Documents and Settings\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2046547b-8fa0-42de-bb73-e510a2fda5bc" Name="%SYSTEM32%\config\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2623ded3-46b7-49cb-a217-b93837389e5d" Name="%OSDRIVE%" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2b999784-ca22-4420-9586-48c707a886dc" Name="*\wininit*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\wininit*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2f397e52-ed88-4106-b3f7-c8dfd399207a" Name="*\audiodg*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\audiodg*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="355bbe7c-06ce-4dfe-892e-bd0ab4c13489" Name="X:\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="X:\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="47698b9a-f351-46d8-b430-3f31e59d3159" Name="*\lsass*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\lsass*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="47aa51db-49a1-44ee-8985-86131a9373cc" Name="*\LsaIso*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\LsaIso*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4dd45b34-e1ba-478e-91a8-a2eea0e61275" Name="%SYSTEM32%\drivers\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\drivers\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5a5e21dc-c2d8-4633-9138-6387355b7e4e" Name="%WINDIR%\WinSxS\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\WinSxS\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5db8656e-d3e7-4f2e-8245-9037b4ea83e2" Name="*\securekernel*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\securekernel*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="60ec4455-3194-4bb1-8498-0318cdce57c2" Name="*" Description="" UserOrGroupSid="S-1-5-21-2564583369-2969045361-2402469614-1013" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="63964858-d78f-45dd-85d1-3db06024cf9f" Name="*\microsoft*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\microsoft*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6cb74fdd-ca3c-41b5-872c-ad2e704ede0b" Name="*\services*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\services*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6f52824b-a428-4936-aaa0-1316972fd52f" Name="All scripts" Description="Allows members of the everyone group to run all scripts." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="779ab887-9423-4166-9995-02e9dff71061" Name="*\msedge*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\msedge*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="81a78efe-7120-486b-9935-4321e0769021" Name="*\rundll32*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\rundll32*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="83906727-9314-4840-a6a8-41131f056320" Name="*\mssense*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\mssense*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="858378f6-2ec9-45c2-afc2-12903869d254" Name="*\winlogon*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\winlogon*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="89546de0-dc53-4660-b374-06878ffd6112" Name="*\explorer*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\explorer*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8ba54e73-2526-4ec2-b400-c6b378be6633" Name="*" Description="" UserOrGroupSid="S-1-5-17" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8c6ca050-5d7b-428e-bf8d-61790d03dc21" Name="%SYSTEM32%\drivers\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\drivers\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="990a3125-d333-4bcc-ad71-0559e46376b0" Name="*\*Network*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\*Network*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a52a1e23-0b9c-42a4-8379-731506f985de" Name="*" Description="" UserOrGroupSid="S-1-5-7" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a88f44a5-4aad-45ee-9fbe-931e8b670163" Name="%SYSTEM32%\config\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\config\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b641d413-8868-413d-9aa8-4b62e82994f1" Name="%OSDRIVE%\$Recycle.Bin\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\$Recycle.Bin\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="be6eeb57-8ced-40d0-a873-83c101c39d0c" Name="*" Description="" UserOrGroupSid="S-1-5-32-546" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c43aaaf6-4ae6-4650-a236-b3b77b9b8147" Name="*\dllhost*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\dllhost*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c8b3951b-6b1d-4905-a037-e60157072ce6" Name="*\wudfhost*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\wudfhost*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d2386606-83b3-489c-869b-72f63468b8fd" Name="%OSDRIVE%\System Volume Information\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\System Volume Information\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d3666bf1-e570-4872-bcfb-a89ef61c815c" Name="*\ctfmon*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\ctfmon*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d83f9366-04d0-490b-82c7-e70f722bb654" Name="*\csrss*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\csrss*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="dd34d48e-e82a-4ee1-92e8-7e7aaf150ff7" Name="*\msmpeng*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\msmpeng*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e05cd87e-4e0f-492f-9cf5-fcb16db533fc" Name="*\logonui*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\logonui*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e4f9fdb4-24b2-4de9-bcae-3eaf427af233" Name="%SYSTEM32%\wbem\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\wbem\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ec77b79b-d268-48f4-bfdd-d771e54ea112" Name="*\smss*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\smss*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="edc3f380-a51e-4d5d-bd46-7826d03df5bc" Name="*\runtimebroker*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\runtimebroker*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f6e85955-ccdd-4cbe-9512-c4ec7aace6be" Name="*\azuread*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\azuread*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f8105d3c-8677-4d4d-890f-fff93773b5f8" Name="*\lsm*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="*\lsm*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+</AppLockerPolicy>

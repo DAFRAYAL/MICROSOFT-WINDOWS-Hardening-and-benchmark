@@ -1,0 +1,54 @@
+Windows Boot Manager
+--------------------
+identifier              {bootmgr}
+device                  partition=D:
+path                    \EFI\Microsoft\Boot\bootmgfw.efi
+description             Windows Boot Manager
+locale                  en-US
+inherit                 {globalsettings}
+firstmegabytepolicy     UseAll
+relocatephysical        1280000
+debugstart              Disable
+badmemoryaccess         No
+bootdebug               No
+highestmode             Yes
+default                 {default}
+resumeobject            {24169433-c7db-11ee-9073-000d3a974b42}
+displayorder            {default}
+toolsdisplayorder       {memdiag}
+timeout                 30
+
+Windows Boot Loader
+-------------------
+identifier              {default}
+device                  partition=D:
+path                    \Windows\system32\winload.efi
+description             Windows 11
+locale                  en-US
+inherit                 {bootloadersettings}
+recoverysequence        {24169439-c7db-11ee-9073-000d3a974b42}
+firstmegabytepolicy     UseAll
+relocatephysical        1280000
+debugstart              Disable
+displaymessageoverride  Recovery
+recoveryenabled         No
+badmemoryaccess         No
+bootdebug               No
+highestmode             Yes
+isolatedcontext         Yes
+allowedinmemorysettings 0x15000075
+osdevice                partition=D:
+systemroot              \Windows
+hypervisorloadoptions   NOFORCESNOOP
+resumeobject            {24169433-c7db-11ee-9073-000d3a974b42}
+nx                      AlwaysOn
+restrictapiccluster     256
+bootmenupolicy          Standard
+bootstatuspolicy        IgnoreAllFailures
+hypervisorlaunchtype    Off
+usephysicaldestination  No
+maxproc                 Yes
+debug                   No
+forcelegacyplatform     No
+ems                     Yes
+hypervisordebug         No
