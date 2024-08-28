@@ -45,7 +45,7 @@ nx                      AlwaysOn
 restrictapiccluster     256
 bootmenupolicy          Standard
 bootstatuspolicy        IgnoreAllFailures
-hypervisorlaunchtype    Off
+hypervisorlaunchtype    Auto
 usephysicaldestination  No
 maxproc                 Yes
 debug                   No
