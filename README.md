@@ -1,5 +1,6 @@
 Skip over existing policy definitions by adding missing definitions in WINDOWS system file folder directory.
 Use POWERSHELL 7 to enter Microsoft Management Console, etc.
+Download files by renaming their format to anything else that's not related by at least 5 characters long.
 
 You see SYSTEM without remote access in management console components defaults.
 
