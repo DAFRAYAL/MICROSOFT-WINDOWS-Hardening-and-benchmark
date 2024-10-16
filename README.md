@@ -38,3 +38,6 @@ MICROSOFT 365 conditional access
 ![Screenshot from 2024-10-14 10-59-31](https://github.com/user-attachments/assets/c9a32123-bc6d-4d59-b3fe-0643fb5dd206)
 ![Screenshot from 2024-10-14 10-59-43](https://github.com/user-attachments/assets/60fbe335-b12d-42be-a48f-f891f18942fa)
 ![Screenshot from 2024-10-14 10-59-56](https://github.com/user-attachments/assets/69082fdc-1c48-4095-8cf7-15cd5f0168f4)
+
+You permit no one to your azure subscription, you do not save password even in edge and can manage access to all Azure subscriptions and management groups in this tenant.
+Your administrative unit is empty. You have no allowed guests, users or other directory roles than global administrators. You are in global administrators group and you have no SSO, API or web applications.
